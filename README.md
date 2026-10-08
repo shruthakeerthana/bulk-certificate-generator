@@ -4,7 +4,7 @@ Asynchronous backend API that turns a list of recipients into personalised PDF c
 (one predefined template), tracks progress per job and per certificate, and lets the client
 download the results. A failure on one certificate never blocks the others.
 
-![tests](https://github.com/<your-username>/bulk-certificate-generator/actions/workflows/tests.yml/badge.svg)
+![tests](https://github.com/shruthakeerthana/bulk-certificate-generator/actions/workflows/tests.yml/badge.svg)
 
 ```mermaid
 flowchart LR
