@@ -42,7 +42,7 @@ Optional environment variables: `DATABASE_URL`, `CERT_DIR`, `MAX_RECIPIENTS` (de
 ## Run tests and lint
 
 ```bash
-pytest                      # 29 tests, ~99% line coverage
+pytest --cov=app --cov-report=term-missing
 ruff check . && ruff format --check .
 ```
 
@@ -128,5 +128,5 @@ app/
   api/certificates.py     the 4 endpoints
   services/certificate_generator.py   one PDF per recipient
   services/job_processor.py           loop + failure isolation + status
-tests/                    pytest suite (29 tests)
+tests/                    pytest suite (30 tests)
 ```
